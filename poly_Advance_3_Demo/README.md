@@ -15,7 +15,7 @@ This repository contains steps for creating a custom circuit using Circom and zk
 ## Steps
 
 ### Clone the Repository
-`https://github.com/Pawash97/Custom-Circuit-Using-Circom.git` 
+Clone this repository onto your local system 
 
 ### Install
 `npm i`
@@ -23,7 +23,7 @@ This repository contains steps for creating a custom circuit using Circom and zk
 ### Compile
 `npx hardhat circom` 
 
-This will generate the **out** file with circuit intermediaries and geneate the **CustomCIrcuitVerifier.sol** contract
+This will generate the **out** file with circuit intermediaries and generate the **CustomCIrcuitVerifier.sol** contract
 
 ### Prove and Deploy
 `npx hardhat run scripts/deploy.ts`
@@ -36,14 +36,14 @@ This script does 4 things
 With two commands you can compile a ZKP, generate a proof, deploy a verifier, and verify the proof.
 
 ### Deploy on Mumbai Testnet
-`npx hardhat run scripts/depoly.ts --network mumbai`
-1. This scripts deploys the contract on `polygon mumbai testnet`.
+`npx hardhat run scripts/deploy.ts --network mumbai`
+1. This script deploys the contract on `polygon mumbai testnet`.
 2. Generates the `contract address` which can be used to fetch the transaction on mumbai testnet.
 3. `verifyProof()` method is called and returns true or false.
 
 ## Authors
-Pawash Kumar Singh 
-pawash97@gmail.com
+Aditya Bhatt 
+adityabhatt05101007@gmail.com
 
 ## Video Walkthrough
-https://www.loom.com/share/11377f25d2da4908b0a6cc5f604ff83f?sid=c53a9c13-63b7-4b54-979f-62f35f8bcbe4
+https://www.loom.com/share/670fc6beb1884efda4205e063fdec75f
